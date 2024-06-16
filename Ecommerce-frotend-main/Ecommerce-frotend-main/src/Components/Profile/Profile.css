@@ -1,0 +1,11 @@
+.box2{
+    margin: 7px;
+}
+
+.ProfileAll{
+    
+    margin-bottom: 0;
+}
+.profileImage{
+ backface-visibility: hidden;   
+}

@@ -1,0 +1,36 @@
+.loader {
+    display: inline-block;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loader_ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    margin-inline: 5px;
+    border-radius: 50%;
+    animation: bounce 450ms alternate infinite;
+}
+
+.loader_ball:nth-child(2) {
+    animation-delay: 150ms;
+}
+
+.loader_ball:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+@keyframes bounce {
+    from {
+        transform: scaleX(1.25);
+    }
+
+    to {
+        transform: translateY(-50px) scaleX(1);
+    }
+}
